@@ -1,0 +1,338 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+  background-color: #1c1e21;
+}
+
+.main_page {
+  text-align: center;
+}
+
+:root {
+  --main_page-padding: 20px;
+  --main_page-width: calc(100% - var(--main_page-padding) * 2);
+}
+.main_page {
+  box-sizing: border-box;
+  width: 100%;
+  padding-top: 100px;
+  padding-left: calc(50% - var(--main_page-width) / 2);
+  padding-right: calc(50% - var(--main_page-width) / 2);
+  font-size: 20px;
+  padding-top: 5%;
+  height: 120%;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #9aa2b3;
+  text-align: left;
+  background-color:#1c1e21;
+}
+
+@media only screen and (min-width: 1040px) {
+  :root {
+      --main_page-width: 1000px;
+  }
+
+.intro .dd .ec {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding:.75rem 1.5rem;
+  text-align: justify;
+}
+
+.intro img {
+  float: right;
+}
+h1 {
+  margin-top: 0;
+  margin-bottom:.75rem
+  font-size:2.5rem;
+  font-weight: 600;
+  line-height:1.2;
+  color: #ffffff;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom:1rem
+}
+
+/* navbar*/
+nav {
+    background-color: rgb(18, 18, 18, .9);
+    height: auto;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index:1030;
+    font-family: "Open sans";
+    padding-top: 40px;
+    color: #9aa2b3;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding:.75rem 1.5rem;
+}
+
+.navlink {
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: bold;
+    color:#9aa2b3;
+    display: inline-block;
+    box-align: right;
+    padding: 1rem 1.5rem;
+    margin-right: 1.5rem;
+    border: 1px #a5bcd3 solid;
+    border-radius: 8px;
+}
+.navlink:hover{
+    color:#fff;
+    background-color: #cebd75;
+    transition: background-color 1500ms linear;
+}
+
+.logo:hover {
+  opacity: 1;
+  transform:scale(1.5);
+}
+
+/* footer*/
+footer{
+    position: relative;
+    left:0;
+    right:0;
+    bottom: 0;
+    background: #121212;
+    height: 20vh;
+    font-family: "Open sans";
+    padding-top: 15px;
+    margin-top: 25px;
+    color: #9aa2b3;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1rem;
+    color: white;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+
+.socials li{
+    margin: 0 20px;
+}
+
+.socials a{
+    text-decoration: none;
+    color: #9aa2b3;
+}
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease;
+
+}
+.socials a:hover i{
+    color: #c0ab4c;
+}
+
+.footer-bottom{
+    background: #121212;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+    margin-top:5px;
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight: 200;
+}
+/* Contact form*/
+.contact {
+    background: #5f6166;
+    border: solid 4px #3a3737;
+    border-radius: 10px;
+    width: 800px;
+    height: 600px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+.contact div + div {
+    margin-top: 2em;
+  }
+
+.contact h2 {
+    font-size: 3rem;
+    font-family : inherit;
+    color: #a6d4b9;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+  .contact input, textarea {
+    border-radius: 10px;
+    font: 3rem sans-serif #9aa2b3;
+    border  : solid 2px rgb(233, 224, 224);
+    padding : 10px;
+    margin  : 5px;
+    background: none;
+    width: 250px;
+    box-sizing: border-box;
+  }
+
+  .contact input:focus, textarea:focus {
+    background: #d3d8ce;
+    outline: none;
+  }
+
+
+    .contact textarea {
+    /* Pour aligner les champs texte multi‑ligne avec leur étiquette */
+    vertical-align: top;
+    resize: none;
+    /* Pour donner assez de place pour écrire du texte */
+    height: 20em;
+    width: 55em;
+    resize  : none;
+    overflow: auto;
+  }
+
+  .contact .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+  }
+
+  .contact .buttons input {
+      
+    color: #a1b1d4;
+    font-size: 1rem
+  }
+
+  .contact .buttons input:hover {
+    background: #d3d8ce;
+    outline: none;
+    cursor: pointer;
+  }
+
+  /* Connection form*/
+.connect {
+  background: #5f6166;
+    border: solid 4px #3a3737;
+    border-radius: 10px;
+    width: 1000px;
+    height: 300px;
+    margin-top: 300px;
+    margin-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.connect div + div {
+    margin-top: 5em;
+  }
+
+.connect h2 {
+  font-size: 3rem;
+  font-family : inherit;
+  color: #a6d4b9;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+  .connect input {
+    border-radius: 10px;
+    font: 3rem sans-serif #9aa2b3;
+    border  : solid 2px rgb(233, 224, 224);
+    padding : 10px;
+    margin  : 5px;
+    background: none;
+    width: 250px;
+    box-sizing: border-box;
+
+  }
+
+  .connect input:focus, textarea:focus {
+    background: #d3d8ce;
+    outline: none;
+  }
+
+  .connect .buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+  }
+
+  .connect .buttons input {
+    color: #a1b1d4;
+    font-size: 1rem;
+    font : .8rem inherit;
+  }
+
+  .connect .buttons input:hover {
+    background: #d3d8ce;
+    outline: none;
+    cursor: pointer;
+  }
+
+  ::placeholder {
+    color: rgb(206, 198, 191);
+    font-size: 13px;
+  }
